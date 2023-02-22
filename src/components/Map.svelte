@@ -20,7 +20,7 @@
 	});
 </script>
 
-<p class="text-center">Map goes here!</p>
+<!-- <p class="text-center">Map goes here!</p> -->
 <div id="map" class="h-screen w-full" />
 
 <style></style>
