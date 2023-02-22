@@ -1,11 +1,13 @@
+<!-- main page -->
 <script>
 	import Map from '../components/Map.svelte';
 	import MathExperiment from '../components/MathExperiment.svelte';
 </script>
 
-<!-- <MathExperiment /> -->
+<MathExperiment />
+<a href="/login"> Go to login screen </a>
 
-<Map />
+<!-- <Map /> -->
 
-<style lang="postcss">
-</style>
+<!-- <style lang="postcss"> -->
+<!-- </style> -->
