@@ -3,3 +3,5 @@
 
 <p>log in with email!</p>
 <p>log in with google!</p>
+
+<a href="/">Back to Home Page</a>

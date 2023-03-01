@@ -4,6 +4,12 @@
 
 	let map;
 
+	// let markers = [
+	// 	{
+	// 		position: new google.maps.LatLng(41.99, 87.65)
+	// 	}
+	// ];
+
 	onMount(() => {
 		const loader = new Loader({
 			apiKey: 'AIzaSyC4cyPSREETc0xru4HcwURRDkIsmYlsHok',
