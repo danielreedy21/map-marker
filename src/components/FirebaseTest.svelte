@@ -12,5 +12,5 @@
 	var firebaseui = require('firebaseui');
 	var firebase = require('firebase/app');
 
-	var ui = new firebaseui.auth.AuthUI(firebase.auth());
+	// var ui = new firebaseui.auth.AuthUI(firebase.auth());
 </script>

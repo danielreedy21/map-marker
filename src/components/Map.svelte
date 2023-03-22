@@ -12,7 +12,7 @@
 
 	onMount(() => {
 		const loader = new Loader({
-			apiKey: 'AIzaSyC4cyPSREETc0xru4HcwURRDkIsmYlsHok',
+			apiKey: import.meta.env.VITE_GOOGLEAPIKEY,
 			version: 'weekly',
 			libraries: ['places']
 		});

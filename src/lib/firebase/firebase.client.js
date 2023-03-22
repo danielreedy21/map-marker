@@ -1,11 +1,9 @@
 import { getApps, getApp, deleteApp, initializeApp } from 'firebase/app';
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import { getAuth, setPersistence, inMemoryPersistence } from 'firebase/auth';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_APIKEY,
   authDomain: import.meta.env.VITE_AUTHDOMAIN,
@@ -28,4 +26,4 @@ if (!getApps().length) {
 
 // exporting our sdks
 export const auth = getAuth(firebaseApp);
-export const analytics = getAnalytics(firebaseApp);
+// export const analytics = getAnalytics(firebaseApp);
