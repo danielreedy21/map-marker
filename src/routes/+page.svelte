@@ -3,9 +3,11 @@
 	// import Map from '../components/Map.svelte';
 	// import MathExperiment from '../components/MathExperiment.svelte';
 	import Auth from '../components/Auth.svelte';
+	import FirebaseTest from '../components/FirebaseTest.svelte';
 </script>
 
-<Auth />
+<FirebaseTest />
+<!-- <Auth /> -->
 <!-- <MathExperiment /> -->
 <!-- <Map /> -->
 <!-- <a href="/login"> Go to login screen </a> -->

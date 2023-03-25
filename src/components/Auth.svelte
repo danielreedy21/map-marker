@@ -1,8 +1,30 @@
 <script>
+	import { authHandlers } from '../stores/authStore';
+
 	let register = false;
 	let email = '';
 	let password = '';
 	let confirmPassword = '';
+
+	async function handleSubmit() {
+		if (!email || !password || (register && !confirmPassword)) {
+			return;
+		}
+
+		if (register && password === confirmPassword) {
+			try {
+				await authHandlers.signup(email, password);
+			} catch (err) {
+				console.log(err);
+			}
+		} else {
+			try {
+				await authHandlers.login(email, password);
+			} catch (err) {
+				console.log(err);
+			}
+		}
+	}
 </script>
 
 <div class="flex flex-col items-center justify-center">
@@ -14,7 +36,7 @@
 		</label>
 
 		<label>
-			<input bind:value={password} type="text" placeholder="Password" />
+			<input bind:value={password} type="password" placeholder="Password" />
 		</label>
 
 		{#if register}
@@ -23,7 +45,7 @@
 			</label>
 		{/if}
 
-		<button class="bg-gray-500">Submit</button>
+		<button class="bg-gray-500" on:click={handleSubmit}>Submit</button>
 	</form>
 
 	{#if register}
